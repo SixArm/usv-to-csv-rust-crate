@@ -57,9 +57,8 @@ Link: [https://crates.io/crates/usv-to-csv](https://crates.io/crates/usv-to-csv)
 Suppose example.usv contains:
 
 ```usv
-a␟b␟c␟␞
-d␟e␟f␟␞
-g␟h␟i␟␞
+a␟b␟␞
+c␟d␟␞
 ```
 
 Run:
@@ -71,9 +70,8 @@ cat example.usv | usv-to-csv
 Output:
 
 ```csv
-a,b,c
-d,e,f
-g,h,i
+a,b
+c,d
 ```
 
 Run:
@@ -85,7 +83,7 @@ cat example.usv | usv-to-csv --unit-separator ";" --record-separator "*"
 Output:
 
 ```csv
-a;b;c*d;e;f*g;h;i
+a;b*d;e
 ```
 
 ## FAQ
@@ -122,8 +120,8 @@ Constructive feedback welcome. Pull requests and feature requests welcome.
 ## Tracking
 
 * Package: usv-to-csv-rust-crate
-* Version: 1.2.0
+* Version: 1.3.2
 * Created: 2024-03-09T13:33:20Z
-* Updated: 2024-03-12T12:55:19Z
+* Updated: 2024-03-24T22:08:32Z
 * License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or contact us for more
 * Contact: Joel Parker Henderson (joel@sixarm.com)

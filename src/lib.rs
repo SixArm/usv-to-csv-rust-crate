@@ -21,14 +21,15 @@ pub fn usv_to_csv_with_separators<
     let mut record_separating = false;
     let mut unit_separating = false;
     let mut s = String::new();
-    for record in usv.as_ref().records() {
+    let records: Records = usv.as_ref().records().collect();
+    for record in records {
         if record_separating {
             s +=  output_record_separator.as_ref()
         } else {
             record_separating = true;
         }
         unit_separating = false;
-        for unit in record.units() {
+        for unit in record {
             if unit_separating {
                 s += output_unit_separator.as_ref()
             } else {

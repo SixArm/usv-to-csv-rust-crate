@@ -4,9 +4,9 @@ version = 3
 
 [[package]]
 name = "aho-corasick"
-version = "1.1.2"
+version = "1.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b2969dcb958b36655471fc61f7e416fa76033bdd4bfed0678d8fee1e2d07a1f0"
+checksum = "8e60d3430d3a69478ad0993f19238d2df97c507009a52b3c10addcd7f6bcb916"
 dependencies = [
  "memchr",
 ]
@@ -585,13 +585,13 @@ checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
 
 [[package]]
 name = "usv"
-version = "0.9.0"
+version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "501958cc2c6d99f7e9c7673e97e068673881fbec8a07237b085c8555ee13457a"
+checksum = "1d5ed6dd4f2f8f1ec61c3827d2f4f2caec23de8fb1ffdb3d9fbfab3d9240eab6"
 
 [[package]]
 name = "usv-to-csv"
-version = "1.3.1"
+version = "1.3.2"
 dependencies = [
  "clap",
  "criterion",
