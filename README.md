@@ -126,7 +126,7 @@ Constructive feedback welcome. Pull requests and feature requests welcome.
 ## Tracking
 
 * Package: usv-to-csv-rust-crate
-* Version: 1.3.3
+* Version: 1.3.4
 * Created: 2024-03-09T13:33:20Z
 * Updated: 2024-03-26T17:46:08Z
 * License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or contact us for more
