@@ -127,9 +127,9 @@
 //! ## Tracking
 //!
 //! * Package: usv-to-csv-rust-crate
-//! * Version: 1.3.2
+//! * Version: 1.3.3
 //! * Created: 2024-03-09T13:33:20Z
-//! * Updated: 2024-03-24T22:08:32Z
+//! * Updated: 2024-03-26T17:46:08Z
 //! * License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or contact us for more
 //! * Contact: Joel Parker Henderson (joel@sixarm.com)
 
@@ -138,7 +138,7 @@
 extern crate log;
 extern crate env_logger;
 
-use usv_to_csv::usv_to_csv_with_separators;
+use usv_to_csv::usv_to_csv_with_delimiter;
 use std::io::{Read, stdin};
 
 pub mod app {
@@ -153,6 +153,6 @@ fn main() -> std::io::Result<()> {
     let mut stdin = stdin().lock();
     let mut s = String::new();
     stdin.read_to_string(&mut s)?;
-    println!("{}", usv_to_csv_with_separators(&s, args.unit_separator, args.record_separator));
+    println!("{}", usv_to_csv_with_delimiter(&s, args.delimiter));
     Ok(())
 }

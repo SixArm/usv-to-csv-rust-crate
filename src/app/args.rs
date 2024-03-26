@@ -17,13 +17,10 @@ pub struct Args {
     /// Example: 5 means print debug diagnostics.
     pub(crate) log_level: Option<::log::Level>,
 
-    /// Unit separator string.
+    /// CSV delimiter string.
     /// Example: ","
-    pub(crate) unit_separator: String,
+    pub(crate) delimiter: String,
 
-    /// Record separator string.
-    /// Example: "\n"
-    pub(crate) record_separator: String,
 }
 
 impl Default for Args {
@@ -31,8 +28,7 @@ impl Default for Args {
         Args {
             test: false,
             log_level: None,
-            unit_separator: String::from(","),
-            record_separator: String::from("\n"),
+            delimiter: String::from(","),
         }
     }
 }

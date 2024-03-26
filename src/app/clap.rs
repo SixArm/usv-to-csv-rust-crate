@@ -26,24 +26,17 @@ pub fn clap() -> crate::app::args::Args {
         .long("verbose")
         .help("Set the verbosity level: 0=none, 1=error, 2=warn, 3=info, 4=debug, 5=trace.\nExample: --verbose …")
         .action(clap::ArgAction::Count))
-    .arg(Arg::new("unit-separator")
-        .help("Set the unit separator string")
-        .short('u')
-        .long("unit-separator")
+    .arg(Arg::new("delimiter")
+        .help("Set the CSV delimiter string")
+        .short('d')
+        .long("delimiter")
         .default_value(",")
-        .action(clap::ArgAction::Set))
-    .arg(Arg::new("record-separator")
-        .help("Set the record separator string")
-        .short('r')
-        .long("record-separator")
-        .default_value("\n")
         .action(clap::ArgAction::Set))
     .get_matches();
 
     crate::app::args::Args {
         test: matches.get_flag("test"),
         log_level: crate::app::log::u8_to_log_level(matches.get_count("verbose")),
-        unit_separator: matches.get_one::<String>("unit-separator").expect("unit-separator is missing default value").into(),
-        record_separator: matches.get_one::<String>("record-separator").expect("record-separator is missing default value").into(),
+        delimiter: matches.get_one::<String>("delimiter").expect("delimiter is missing default value").into(),
     }
 }
