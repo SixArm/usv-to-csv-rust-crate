@@ -585,13 +585,13 @@ checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
 
 [[package]]
 name = "usv"
-version = "0.17.1"
+version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8c1cb1e28f986e7e2c22ca47f549ddc7dd91265deab07968155cb396959948dd"
+checksum = "85c8a6c6acc732ef785440c11f2b10063d7738202511c99739250ac40e97f92b"
 
 [[package]]
 name = "usv-to-csv"
-version = "1.3.5"
+version = "1.4.0"
 dependencies = [
  "clap",
  "criterion",
