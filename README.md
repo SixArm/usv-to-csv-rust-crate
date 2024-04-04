@@ -14,17 +14,7 @@ Example:
 cat example.usv | usv-to-csv
 ```
 
-Example with output to a file:
-
-```sh
-cat example.usv | usv-to-csv > example.csv
-```
-
-Example with custom separators:
-
-```sh
-cat example.usv | usv-to-csv --unit-separator ";" --record-separator "*"
-```
+More examples below.
 
 ## Options
 
@@ -77,13 +67,14 @@ c,d
 Run:
 
 ```sh
-cat example.usv | usv-to-csv --unit-separator ";" --record-separator "*"
+cat example.usv | usv-to-csv --delimiter ";"
 ```
 
 Output:
 
 ```csv
-a;b*d;e
+a;b
+d;e
 ```
 
 ## FAQ
@@ -126,8 +117,8 @@ Constructive feedback welcome. Pull requests and feature requests welcome.
 ## Tracking
 
 * Package: usv-to-csv-rust-crate
-* Version: 1.3.4
+* Version: 1.3.5
 * Created: 2024-03-09T13:33:20Z
-* Updated: 2024-03-26T17:46:08Z
+* Updated: 2024-04-04T04:01:42Z
 * License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or contact us for more
 * Contact: Joel Parker Henderson (joel@sixarm.com)
