@@ -1,6 +1,10 @@
 # usv-to-csv
 
-Convert [Unicode Separated Values (USV)](https://github.com/sixarm/usv) to Comma Separated Values (CSV).
+Convert
+[Unicode Separated Values (USV)](https://github.com/sixarm/usv)
+to
+[Comma Separated Values (CSV)](https://github.com/SixArm/usv/tree/main/doc/comparisons/csv).
+Built with the [USV Rust crate](https://crates.io/crate/usv).
 
 Syntax:
 
